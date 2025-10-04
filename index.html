@@ -115,13 +115,22 @@
     .video-container {
       max-width: 350px;
       margin: 40px auto 0;
-    }
-    .video-container video {
-      width: 100%;
-      height: auto;
       border-radius: 8px;
+      overflow: hidden;
       box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-      display: block;
+    }
+    .responsive-video-wrapper {
+      position: relative;
+      overflow: hidden;
+      padding-top: 177.77%;
+    }
+    .responsive-video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
     .newsletter {
       background: #2f3640;
@@ -231,13 +240,13 @@
       <img src="images/screenshot6.png" alt="Screenshot 7">
       <img src="images/screenshot7.png" alt="Screenshot 8">
       <img src="images/screenshot8.png" alt="Screenshot 8">
+      <img src="images/screenshot9.png" alt="Screenshot 9">
     </div>
 
     <div class="video-container">
-      <video id="game-video" controls preload="metadata" poster="images/video-thumbnail.png">
-        <source src="videos/game-trailer.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <div class="responsive-video-wrapper">
+        <iframe src="https://www.youtube.com/embed/EtfkmG0vg8k" title="Game Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
   </section>
 
@@ -285,11 +294,6 @@
 
     document.addEventListener('DOMContentLoaded', () => {
       const languageSelector = document.getElementById('language-selector');
-      const gameVideo = document.getElementById('game-video');
-
-      if (gameVideo) {
-        gameVideo.volume = 0.5;
-      }
 
       const applyTranslations = (lang) => {
         document.querySelectorAll('[data-key]').forEach(element => {
