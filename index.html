@@ -99,7 +99,7 @@
     }
     .screenshots {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
       margin-top: 20px;
     }
@@ -111,6 +111,17 @@
     }
     .screenshots img:hover {
       transform: scale(1.05);
+    }
+    .video-container {
+      max-width: 350px;
+      margin: 40px auto 0;
+    }
+    .video-container video {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      display: block;
     }
     .newsletter {
       background: #2f3640;
@@ -216,11 +227,17 @@
       <img src="images/screenshot2.png" alt="Screenshot 2">
       <img src="images/screenshot3.png" alt="Screenshot 3">
       <img src="images/screenshot4.png" alt="Screenshot 4">
-      <img src="images/screenshot5.png" alt="Screenshot 5">
-      <img src="images/screenshot6.png" alt="Screenshot 6">      
-      <img src="images/screenshot7.png" alt="Screenshot 7">
+      <img src="images/screenshot5.png" alt="Screenshot 6">      
+      <img src="images/screenshot6.png" alt="Screenshot 7">
+      <img src="images/screenshot7.png" alt="Screenshot 8">
       <img src="images/screenshot8.png" alt="Screenshot 8">
-      <img src="images/screenshot9.png" alt="Screenshot 9">
+    </div>
+
+    <div class="video-container">
+      <video id="game-video" controls preload="metadata" poster="images/video-thumbnail.png">
+        <source src="videos/game-trailer.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
   </section>
 
@@ -253,4 +270,46 @@
     const translations = {
       en: {
         pageTitle: "Equilibrium Project",
-        tagline: "Enter an epic
+        tagline: "Enter an epic world, full of adventures and mysteries. Get ready to experience a unique journey!",
+        downloadBtn: "Join Discord",
+        screenshotsTitle: "Game Screenshots",
+        joinSectionTitle: "Join Our Community",
+        joinSectionText: "Join our Discord to connect with other players and stay updated!",
+        newsletterTitle: "Subscribe to our Newsletter",
+        newsletterText: "Stay updated with our latest news and updates.",
+        newsletterPlaceholder: "Enter your email address",
+        newsletterBtn: "Subscribe",
+        footerText: "© 2025 Equilibrium Project. All rights reserved. Made by rgnsdev."
+      }
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const languageSelector = document.getElementById('language-selector');
+      const gameVideo = document.getElementById('game-video');
+
+      if (gameVideo) {
+        gameVideo.volume = 0.5;
+      }
+
+      const applyTranslations = (lang) => {
+        document.querySelectorAll('[data-key]').forEach(element => {
+          const key = element.getAttribute('data-key');
+          if (translations[lang] && translations[lang][key]) {
+            if (element.tagName === 'INPUT' && element.hasAttribute('placeholder')) {
+              element.setAttribute('placeholder', translations[lang][key]);
+            } else {
+              element.textContent = translations[lang][key];
+            }
+          }
+        });
+      };
+
+      languageSelector.addEventListener('change', (event) => {
+        applyTranslations(event.target.value);
+      });
+
+      applyTranslations(languageSelector.value);
+    });
+  </script>
+</body>
+</html>
