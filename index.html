@@ -6,7 +6,7 @@
   <title>Equilibrium RPG</title>
   <style>
     @font-face {
-      font-family: 'RasterForge';
+      font-family: 'RetroGaming';
       src: url('fonts/Retro Gaming.ttf') format('truetype');
     }
     * {
@@ -44,13 +44,13 @@
     }
 
     header h1 {
-      font-family: 'RasterForge', sans-serif;
+      font-family: 'RetroGaming', sans-serif;
       font-size: 3em;
       text-shadow: 
-        2px 2px 0 #1E222A,  
-        2px 2px 0 #1E222A,
-        2px 2px 0 #1E222A,
-        2px 2px 0 #1E222A;
+        1.5px 1.5px 0 #1E222A,  
+        1.5px 1.5px 0 #1E222A,  
+        1.5px 1.5px 0 #1E222A,  
+        1.5px 1.5px 0 #1E222A;
       margin-bottom: 10px;
     }
     header p {
@@ -58,6 +58,7 @@
       margin-bottom: 30px;
     }
     .header-container {
+	  font-family: 'RetroGaming', sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -70,7 +71,7 @@
       flex-direction: column;
       align-items: center;
       gap: 10px;
-	  font-weight: bold;
+	  font-weight: 500;
     }
     header .cta-button {
       background-color: #ff4757;
@@ -86,7 +87,7 @@
     }
     .social-links-top {
       display: flex;
-      gap: 15px;
+      gap: 40px;
     }
     .social-links-top a {
       color: #fff;
@@ -116,7 +117,7 @@
       margin: auto;
     }
     section h2 {
-      font-family: 'RasterForge', sans-serif;
+      font-family: 'RetroGaming', sans-serif;
       text-align: center;
       margin-bottom: 20px;
     }
@@ -246,6 +247,9 @@
 	  #description{
 	  margin-bottom: 5px;
 	  }
+	  .social-links-top {
+      gap: 15px;
+    }
     }
   </style>
 </head>
@@ -257,7 +261,7 @@
   <header>
     <div class="header-container">
       <h1 data-key="pageTitle">Equilibrium RPG</h1>
-      <p data-key="tagline" id="description">Enter a world full of adventures and encounters. Get ready to experience an unique story, Your story.</p>
+      <p data-key="tagline" id="description">Enter a world full of adventures and encounters. Get ready to experience an unique story, <b>Your</b> story.</p>
       <div class="cta-container">
         <a href="https://discord.gg/nDTVEqxSrg" target="_blank" class="cta-button" data-key="downloadBtn">Join Discord</a>
         <div class="social-links-top">
