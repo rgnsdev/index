@@ -185,10 +185,6 @@
       height: 250px; 
     }
     
-    .cover-char.shrink-visual img {
-      padding: 40px; 
-    }
-    
     .album-cover {
       width: 100%;
       height: 100%;
@@ -476,7 +472,7 @@
         basePath: BASE_PATH_ENV + 'moonpeak_town/',
         cover: 'moonpeak_town_final.png',
         items: [
-          ...generateSequence('moonpeak_town_concept_', 1, 7, 'webp'),
+          ...generateSequence('moonpeak_town_concept_', 1, 8, 'webp'),
           { type: 'img', src: 'moonpeak_town_final.png', caption: 'Last Concept Version' }
         ]
       },
@@ -498,7 +494,7 @@
         title: 'Blue Slime',
         basePath: BASE_PATH_ENEMY + 'blue_slime/',
         cover: 'blue_slime_final_cover.png',
-        scaleDown: true, 
+        coverPadding: 55,
         items: [
           ...generateSequence('blue_slime_concept_', 1, 2, 'webp'),
           { type: 'img', src: 'blue_slime_final.png', caption: 'Last Concept Version' }
@@ -510,6 +506,7 @@
         title: 'Brown Bird',
         basePath: BASE_PATH_ENEMY + 'brown_bird_concept/',
         cover: 'brown_bird_final_cover.png',
+        coverPadding: 40,
         items: [
           { type: 'img', src: 'brown_bird_concept_1.webp', caption: 'Concept #1' },
           { type: 'video', src: 'brown_bird_concept_2.mp4', caption: 'Animation Test' },
@@ -522,7 +519,7 @@
         title: 'Leafie',
         basePath: BASE_PATH_ENEMY + 'leafie_concept/',
         cover: 'leafie_final_cover.png',
-        scaleDown: true,
+        coverPadding: 50,
         items: [
            ...generateSequence('leafie_concept_', 1, 7, 'webp'),
            { type: 'img', src: 'leafie_final.png', caption: 'Last Concept Version' }
@@ -534,6 +531,7 @@
         title: 'Elder Blue Slime (Boss)',
         basePath: BASE_PATH_ENEMY + 'elder_blue_slime_boss/',
         cover: 'elder_blue_slime_boss_final_cover.png',
+        coverPadding: 10,
         items: [
           ...generateSequence('elder_blue_slime_boss_concept_', 1, 7, 'webp'),
           { type: 'img', src: 'elder_blue_slime_boss_final.png', caption: 'Last Concept Version' }
@@ -597,13 +595,11 @@
         
         let heightClass = album.category === 'env' ? 'cover-env' : 'cover-char';
         
-        if (album.scaleDown) {
-          heightClass += ' shrink-visual';
-        }
+        const paddingStyle = album.coverPadding ? `padding: ${album.coverPadding}px;` : '';
         
         card.innerHTML = `
           <div class="album-cover-container ${heightClass}">
-            <img class="album-cover" src="${coverSrc}" alt="${album.title}" 
+            <img class="album-cover" src="${coverSrc}" alt="${album.title}" style="${paddingStyle}"
                  onerror="this.src='https://via.placeholder.com/300x200/333/fff?text=No+Cover'">
           </div>
           <div class="album-info">
