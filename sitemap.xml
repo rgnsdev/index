@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://equilibriumrpg.com/</loc>
+    <lastmod>2025-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://equilibriumrpg.com/images/screenshot_1.png</image:loc>
+      <image:title>Equilibrium RPG gameplay screenshot</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://equilibriumrpg.com/images/screenshot_2.png</image:loc>
+      <image:title>Equilibrium RPG gameplay screenshot</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://equilibriumrpg.com/images/screenshot_3.png</image:loc>
+      <image:title>Equilibrium RPG gameplay screenshot</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://equilibriumrpg.com/images/screenshot_4.png</image:loc>
+      <image:title>Equilibrium RPG gameplay screenshot</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://equilibriumrpg.com/images/screenshot_5.png</image:loc>
+      <image:title>Equilibrium RPG gameplay screenshot</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://equilibriumrpg.com/images/screenshot_6.png</image:loc>
+      <image:title>Equilibrium RPG gameplay screenshot</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://equilibriumrpg.com/concepts.html</loc>
+    <lastmod>2025-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concept Art Gallery - Equilibrium RPG | Handcrafted Pixel Art</title>
+  <meta name="description" content="Explore the visual development of Equilibrium RPG. View handcrafted pixel art concepts for environments, creatures, and enemies. All human-made art.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://equilibriumrpg.com/concepts.html">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Concept Art Gallery - Equilibrium RPG">
+  <meta property="og:description" content="Explore the visual development of Equilibrium RPG with handcrafted pixel art concepts.">
+  <meta property="og:url" content="https://equilibriumrpg.com/concepts.html">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Concept Art Gallery - Equilibrium RPG">
+  <meta name="twitter:description" content="Explore the visual development of Equilibrium RPG with handcrafted pixel art concepts.">
+  
+  <meta name="theme-color" content="#51B1E8">
+  <style>
+    @font-face {
+      font-family: 'RetroGaming';
+      src: url('fonts/Retro Gaming.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'RasterForge';
+      src: url('fonts/RasterForgeRegular.ttf') format('truetype');
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'RasterForge', 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background: #1E1E1E;
+      color: #f0f0f0; 
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    header {
+      background: linear-gradient(180deg, rgb(81, 177, 232,1), rgb(144, 238, 245,0));
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 5%;
+      width: 100%;
+      height: 400px; 
+      background-image: url('images/clouds.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      image-rendering: pixelated;
+      opacity: 0.6;
+      z-index: 0;
+    }
+
+    @media (max-width: 425px) {
+      header::before {
+        height: 150px;
+      }
+    }
+
+    header h1 {
+      font-family: 'RetroGaming', sans-serif;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 0 #1A1A1A;
+      margin-bottom: 5px;
+      position: relative; 
+      z-index: 2;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 2;
+      font-family: 'RasterForge', sans-serif;
+      font-weight: 500;
+    }
+    .header-actions {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    .btn {
+      background-color: #2f3640;
+      color: #fff;
+      padding: 8px 16px;
+      text-decoration: none;
+      font-size: 1em;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      font-family: 'RasterForge', sans-serif;
+      border: 1px solid #555;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn:hover {
+      background-color: #ff4757;
+      border-color: #ff4757;
+      transform: translateY(-2px);
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 1400px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .section-title {
+      font-family: 'RetroGaming', sans-serif;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+      color: #fff;
+      font-size: 1.5em;
+    }
+
+    .albums-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-bottom: 40px;
+      justify-content: flex-start;
+    }
+
+    .album-card {
+      width: calc(25% - 19px); 
+      background: #2f3640;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      border: 1px solid #444;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    
+    @media (max-width: 1200px) { .album-card { width: calc(33.33% - 17px); } }
+    @media (max-width: 900px) { .album-card { width: calc(50% - 13px); } }
+    @media (max-width: 600px) { .album-card { width: 100%; } }
+
+    .album-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+      border-color: #ff4757;
+      z-index: 10;
+    }
+    
+    .album-cover-container {
+      width: 100%;
+      overflow: hidden;
+      background-color: #2f3640; 
+      border-bottom: 1px solid #444;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px; 
+    }
+
+    .cover-env {
+      height: 600px; 
+    }
+    .cover-char {
+      height: 250px; 
+    }
+    
+    .cover-char.shrink-visual img {
+      padding: 40px; 
+    }
+    
+    .album-cover {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; 
+      object-position: center;
+      display: block;
+      transition: transform 0.3s ease;
+      opacity: 0; 
+      animation: fadeIn 0.5s forwards;
+    }
+    
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    
+    .album-card:hover .album-cover {
+      transform: scale(1.05);
+    }
+
+    .album-cover, .gallery-item img {
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -webkit-crisp-edges;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+      -ms-interpolation-mode: nearest-neighbor;
+    }
+    
+    .album-info {
+      padding: 15px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #2f3640;
+    }
+    .album-title {
+      font-family: 'RasterForge', sans-serif;
+      font-size: 1.2em;
+      color: #fff;
+      margin-bottom: 5px;
+    }
+    .album-count {
+      font-size: 0.9em;
+      color: #aaa;
+      font-family: 'RasterForge', sans-serif;
+    }
+
+    #detail-view {
+      display: none; 
+    }
+    
+    #detail-desc {
+      margin-bottom: 30px;
+      color: #aaa;
+      font-family: 'RasterForge', sans-serif;
+      font-size: 1.1em;
+    }
+
+    .gallery-masonry {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: flex-start;
+    }
+
+    .gallery-item {
+      width: calc(25% - 15px);
+      margin-bottom: 0;
+      background: #252525;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    
+    @media (max-width: 1200px) { .gallery-item { width: calc(33.33% - 14px); } }
+    @media (max-width: 800px) { .gallery-item { width: calc(50% - 10px); } }
+    @media (max-width: 500px) { .gallery-item { width: 100%; } }
+
+    .gallery-item:hover {
+      transform: scale(1.02);
+      z-index: 5;
+    }
+    .gallery-item img, .gallery-item video {
+      width: 100%;
+      height: 250px;
+      object-fit: contain;
+      background: #1a1a1a;
+      display: block;
+      flex-grow: 1;
+    }
+    .item-caption {
+      padding: 10px;
+      font-size: 0.9em;
+      color: #bbb;
+      background: #2a2a2a;
+      text-align: center;
+      border-top: 1px solid #333;
+      font-family: 'RasterForge', sans-serif;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.95);
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .modal.show {
+      opacity: 1;
+    }
+    .modal-content-wrapper {
+      position: relative;
+      width: 90%;
+      height: 85vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden; 
+      cursor: grab;
+    }
+    .modal-content-wrapper:active {
+      cursor: grabbing;
+    }
+    .modal-content {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 4px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.8);
+      cursor: zoom-in; 
+      transition: transform 0.2s ease; 
+      transform-origin: center center;
+    }
+    .modal-content.zoomed {
+      cursor: grab;
+      transform: scale(2.5); 
+    }
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: #fff;
+      font-size: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      line-height: 1;
+      z-index: 2002;
+    }
+    .close-modal:hover {
+      color: #ff4757;
+    }
+    
+    .nav-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #fff;
+      font-size: 60px;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 20px;
+      user-select: none;
+      z-index: 2001;
+      transition: color 0.3s;
+      font-family: 'RetroGaming', sans-serif;
+    }
+    .nav-arrow:hover {
+      color: #ff4757;
+    }
+    .prev-arrow { left: 20px; }
+    .next-arrow { right: 20px; }
+
+    footer {
+      background: #2f3640;
+      text-align: center;
+      padding: 20px;
+      font-size: 1em;
+      flex-shrink: 0;
+      font-family: 'RasterForge', sans-serif;
+    }
+
+    img.error {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Concept Art Gallery</h1>
+    <p>Explore the visual development of Equilibrium RPG</p>
+    <div class="header-actions">
+      <a href="index.html" class="btn" aria-label="Return to home page">← Home</a>
+      <button id="back-btn" class="btn" style="display: none;" onclick="showAlbums()" aria-label="Return to albums view">← Back to Albums</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="albums-view">
+      <h2 class="section-title">Environments</h2>
+      <div id="env-albums" class="albums-grid" role="list" aria-label="Environment concept art albums"></div>
+      
+      <h2 class="section-title">Creatures & Enemies</h2>
+      <div id="char-albums" class="albums-grid" role="list" aria-label="Creature and enemy concept art albums"></div>
+    </div>
+
+    <div id="detail-view">
+      <h2 id="detail-title" class="section-title" style="border-bottom: none; margin-bottom: 10px;">Album Title</h2>
+      <p id="detail-desc">Description</p>
+      <div id="detail-grid" class="gallery-masonry"></div>
+    </div>
+  </main>
+
+  <div id="imageModal" class="modal">
+    <span class="close-modal">&times;</span>
+    
+    <div class="nav-arrow prev-arrow" onclick="changeImage(-1)">&#8249;</div>
+    
+    <div class="modal-content-wrapper">
+      <img class="modal-content" id="modalImg">
+      <video class="modal-content" id="modalVideo" controls style="display:none;"></video>
+    </div>
+
+    <div class="nav-arrow next-arrow" onclick="changeImage(1)">&#8250;</div>
+  </div>
+
+  <footer>
+    <p>© 2025 Equilibrium RPG. All rights reserved. Made by rgnsdev.</p>
+  </footer>
+
+  <script>
+    const BASE_PATH_ENV = 'images/concept_images_backgrounds/';
+    const BASE_PATH_ENEMY = 'images/concept_images_enemies/';
+
+    const albums = [
+      {
+        id: 'pine_forest',
+        category: 'env',
+        title: 'Pine Forest',
+        basePath: BASE_PATH_ENV + 'pine_forest/',
+        cover: 'pine_forest_final.png',
+        items: [
+          ...generateSequence('pine_forest_concept_', 1, 15, 'webp'),
+          { type: 'img', src: 'pine_forest_final.png', caption: 'Last Concept Version' }
+        ]
+      },
+      {
+        id: 'pine_forest_hard',
+        category: 'env',
+        title: 'Pine Forest (Hard Mode)',
+        basePath: BASE_PATH_ENV + 'pine_forest_hard/',
+        cover: 'pine_forest_hard_final.png',
+        items: [
+          ...generateSequence('pine_forest_hard_concept_', 1, 2, 'webp'),
+          { type: 'img', src: 'pine_forest_hard_final.png', caption: 'Last Concept Version' }
+        ]
+      },
+      {
+        id: 'pine_forest_sunset',
+        category: 'env',
+        title: 'Pine Forest (Sunset)',
+        basePath: BASE_PATH_ENV + 'pine_forest_sunset/',
+        cover: 'pine_forest_sunset_final.png',
+        items: [
+          ...generateSequence('pine_forest_sunset_concept_', 1, 11, 'webp'),
+          { type: 'img', src: 'pine_forest_sunset_final.png', caption: 'Last Concept Version' }
+        ]
+      },
+      {
+        id: 'moonpeak',
+        category: 'env',
+        title: 'Moonpeak Town',
+        basePath: BASE_PATH_ENV + 'moonpeak_town/',
+        cover: 'moonpeak_town_final.png',
+        items: [
+          ...generateSequence('moonpeak_town_concept_', 1, 7, 'webp'),
+          { type: 'img', src: 'moonpeak_town_final.png', caption: 'Last Concept Version' }
+        ]
+      },
+
+      {
+        id: 'gray_wolf',
+        category: 'char',
+        title: 'Gray Wolf',
+        basePath: BASE_PATH_ENEMY + 'gray_wolf_concept/',
+        cover: 'gray_wolf_final_cover.png',
+        items: [
+          ...generateSequence('gray_wolf_concept_', 1, 3, 'webp'),
+          { type: 'img', src: 'gray_wolf_final.png', caption: 'Last Concept Version' }
+        ]
+      },
+      {
+        id: 'blue_slime',
+        category: 'char',
+        title: 'Blue Slime',
+        basePath: BASE_PATH_ENEMY + 'blue_slime/',
+        cover: 'blue_slime_final_cover.png',
+        scaleDown: true, 
+        items: [
+          ...generateSequence('blue_slime_concept_', 1, 2, 'webp'),
+          { type: 'img', src: 'blue_slime_final.png', caption: 'Last Concept Version' }
+        ]
+      },
+      {
+        id: 'brown_bird',
+        category: 'char',
+        title: 'Brown Bird',
+        basePath: BASE_PATH_ENEMY + 'brown_bird_concept/',
+        cover: 'brown_bird_final_cover.png',
+        items: [
+          { type: 'img', src: 'brown_bird_concept_1.webp', caption: 'Concept #1' },
+          { type: 'video', src: 'brown_bird_concept_2.mp4', caption: 'Animation Test' },
+          { type: 'img', src: 'brown_bird_final.png', caption: 'Last Concept Version' }
+        ]
+      },
+      {
+        id: 'leafie',
+        category: 'char',
+        title: 'Leafie',
+        basePath: BASE_PATH_ENEMY + 'leafie_concept/',
+        cover: 'leafie_final_cover.png',
+        scaleDown: true,
+        items: [
+           ...generateSequence('leafie_concept_', 1, 7, 'webp'),
+           { type: 'img', src: 'leafie_final.png', caption: 'Last Concept Version' }
+        ]
+      },
+      {
+        id: 'elder_slime',
+        category: 'char',
+        title: 'Elder Blue Slime (Boss)',
+        basePath: BASE_PATH_ENEMY + 'elder_blue_slime_boss/',
+        cover: 'elder_blue_slime_boss_final_cover.png',
+        items: [
+          ...generateSequence('elder_blue_slime_boss_concept_', 1, 7, 'webp'),
+          { type: 'img', src: 'elder_blue_slime_boss_final.png', caption: 'Last Concept Version' }
+        ]
+      },
+      {
+        id: 'boar',
+        category: 'char',
+        title: 'Wild Boar',
+        basePath: BASE_PATH_ENEMY + 'boar_concept/',
+        cover: 'boar_final_cover.png',
+        items: [
+          ...generateSequence('boar_concept_', 1, 4, 'webp'),
+          { type: 'img', src: 'boar_final.png', caption: 'Last Concept Version' }
+        ]
+      },
+      {
+        id: 'white_wolf',
+        category: 'char',
+        title: 'Elite White Wolf (Boss)',
+        basePath: BASE_PATH_ENEMY + 'elite_white_wolf_boss_concept/',
+        cover: 'elite_white_wolf_boss_final_cover.png',
+        items: [
+          ...generateSequence('elite_white_wolf_boss_concept_', 1, 5, 'webp'),
+          { type: 'video', src: 'elite_white_wolf_boss_concept_6.mp4', caption: 'Attack Animation' },
+          { type: 'video', src: 'elite_white_wolf_boss_concept_7.mp4', caption: 'Idle Animation' },
+          { type: 'img', src: 'elite_white_wolf_boss_final.png', caption: 'Last Concept Version' }
+        ]
+      }
+    ];
+
+    function generateSequence(prefix, start, end, ext) {
+      const arr = [];
+      for (let i = start; i <= end; i++) {
+        arr.push({ 
+          type: 'img', 
+          src: `${prefix}${i}.${ext}`, 
+          caption: `Concept #${i}` 
+        });
+      }
+      return arr;
+    }
+
+    let currentAlbumIndex = -1;
+    let currentImageIndex = 0;
+
+    function init() {
+      renderAlbums();
+    }
+
+    function renderAlbums() {
+      const envContainer = document.getElementById('env-albums');
+      const charContainer = document.getElementById('char-albums');
+      
+      albums.forEach((album, idx) => {
+        const card = document.createElement('div');
+        card.className = 'album-card';
+        card.onclick = () => openAlbum(idx);
+        
+        const coverSrc = album.basePath + album.cover;
+        
+        let heightClass = album.category === 'env' ? 'cover-env' : 'cover-char';
+        
+        if (album.scaleDown) {
+          heightClass += ' shrink-visual';
+        }
+        
+        card.innerHTML = `
+          <div class="album-cover-container ${heightClass}">
+            <img class="album-cover" src="${coverSrc}" alt="${album.title}" 
+                 onerror="this.src='https://via.placeholder.com/300x200/333/fff?text=No+Cover'">
+          </div>
+          <div class="album-info">
+            <div class="album-title">${album.title}</div>
+            <div class="album-count">${album.items.length} Items</div>
+          </div>
+        `;
+
+        if (album.category === 'env') {
+          envContainer.appendChild(card);
+        } else {
+          charContainer.appendChild(card);
+        }
+      });
+    }
+    
+    function openAlbum(albumIdx) {
+      const album = albums[albumIdx];
+      currentAlbumIndex = albumIdx;
+      
+      document.getElementById('albums-view').style.display = 'none';
+      document.getElementById('detail-view').style.display = 'block';
+      document.getElementById('back-btn').style.display = 'inline-flex';
+      window.scrollTo(0, 0);
+
+      document.getElementById('detail-title').textContent = album.title;
+      document.getElementById('detail-desc').textContent = `Collection of ${album.items.length} concepts and final assets for ${album.title}.`;
+      
+      const grid = document.getElementById('detail-grid');
+      grid.innerHTML = ''; 
+
+      album.items.forEach((item, index) => {
+        const div = document.createElement('div');
+        div.className = 'gallery-item';
+        const fullPath = album.basePath + item.src;
+
+        if (item.type === 'video') {
+          div.innerHTML = `
+            <video src="${fullPath}" muted loop onmouseover="this.play()" onmouseout="this.pause()"></video>
+            <div class="item-caption">🎬 ${item.caption}</div>
+          `;
+        } else {
+          div.innerHTML = `
+            <img src="${fullPath}" loading="lazy" alt="${item.caption}" onerror="this.parentElement.style.display='none'">
+            <div class="item-caption">${item.caption}</div>
+          `;
+        }
+        
+        div.onclick = () => openModal(albumIdx, index);
+        grid.appendChild(div);
+      });
+    }
+
+    function showAlbums() {
+      document.getElementById('detail-view').style.display = 'none';
+      document.getElementById('albums-view').style.display = 'block'; 
+      document.getElementById('back-btn').style.display = 'none';
+    }
+
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    const modalVideo = document.getElementById("modalVideo");
+    const closeBtn = document.querySelector(".close-modal");
+
+    function openModal(albIdx, imgIdx) {
+      currentAlbumIndex = albIdx;
+      currentImageIndex = imgIdx;
+      updateModalContent();
+      
+      modal.style.display = "flex";
+      setTimeout(() => modal.classList.add('show'), 10);
+    }
+
+    function updateModalContent() {
+      const album = albums[currentAlbumIndex];
+      const item = album.items[currentImageIndex];
+      const fullPath = album.basePath + item.src;
+
+      resetZoom();
+
+      if (item.type === 'video') {
+        modalImg.style.display = "none";
+        modalVideo.style.display = "block";
+        modalVideo.src = fullPath;
+        modalVideo.play();
+      } else {
+        modalVideo.style.display = "none";
+        modalVideo.pause();
+        modalImg.style.display = "block";
+        modalImg.src = fullPath;
+      }
+    }
+    
+    let isZoomed = false;
+    let startX, startY, translateX = 0, translateY = 0;
+    let isDragging = false; 
+    let hasMoved = false;   
+    
+    function resetZoom() {
+      isZoomed = false;
+      translateX = 0;
+      translateY = 0;
+      modalImg.classList.remove('zoomed');
+      modalImg.style.transform = ''; 
+      modalImg.style.cursor = 'zoom-in';
+      wrapper.style.cursor = 'default';
+    }
+
+    const wrapper = document.querySelector('.modal-content-wrapper');
+
+    modalImg.ondragstart = () => false;
+
+    wrapper.addEventListener('mousedown', function(e) {
+      if (!isZoomed) return;
+      
+      isDragging = true;
+      hasMoved = false;
+      startX = e.clientX - translateX;
+      startY = e.clientY - translateY;
+      
+      wrapper.style.cursor = 'grabbing';
+      modalImg.style.cursor = 'grabbing';
+    });
+
+    window.addEventListener('mousemove', function(e) {
+      if (!isDragging || !isZoomed) return;
+
+      e.preventDefault(); 
+      hasMoved = true;
+      
+      translateX = e.clientX - startX;
+      translateY = e.clientY - startY;
+      
+      modalImg.style.transform = `scale(2.5) translate(${translateX / 2.5}px, ${translateY / 2.5}px)`;
+    });
+
+    window.addEventListener('mouseup', function(e) {
+      if (!isDragging) return;
+      
+      isDragging = false;
+      wrapper.style.cursor = 'default';
+      modalImg.style.cursor = 'grab';
+    });
+
+    modalImg.addEventListener('click', function(e) {
+      e.stopPropagation();
+      
+      if (hasMoved && isZoomed) {
+        hasMoved = false;
+        return;
+      }
+      
+      isZoomed = !isZoomed;
+      
+      if (isZoomed) {
+        modalImg.classList.add('zoomed');
+        modalImg.style.cursor = 'grab';
+      } else {
+        resetZoom();
+      }
+    });
+
+    function changeImage(direction) {
+      const album = albums[currentAlbumIndex];
+      let newImgIdx = currentImageIndex + direction;
+
+      if (newImgIdx >= 0 && newImgIdx < album.items.length) {
+        currentImageIndex = newImgIdx;
+        updateModalContent();
+      } 
+      else if (newImgIdx >= album.items.length) {
+        const nextAlbIdx = currentAlbumIndex + 1;
+        if (nextAlbIdx < albums.length) {
+          currentAlbumIndex = nextAlbIdx;
+          currentImageIndex = 0; 
+          updateModalContent();
+        }
+      } 
+      else if (newImgIdx < 0) {
+        const prevAlbIdx = currentAlbumIndex - 1;
+        if (prevAlbIdx >= 0) {
+          currentAlbumIndex = prevAlbIdx;
+          currentImageIndex = albums[prevAlbIdx].items.length - 1; 
+          updateModalContent();
+        }
+      }
+    }
+
+    function closeModalFunc() {
+      modal.classList.remove('show');
+      setTimeout(() => {
+        modal.style.display = "none";
+        modalVideo.pause();
+        modalVideo.src = "";
+        modalImg.src = "";
+      }, 300); 
+    }
+
+    closeBtn.onclick = closeModalFunc;
+    
+    modal.onclick = function(e) {
+      if (e.target === modal || e.target.classList.contains('modal-content-wrapper')) {
+        closeModalFunc();
+      }
+    }
+    
+    document.addEventListener('keydown', function(e) {
+      if (modal.style.display === "flex") {
+        if (e.key === "Escape") closeModalFunc();
+        if (e.key === "ArrowLeft") changeImage(-1);
+        if (e.key === "ArrowRight") changeImage(1);
+      }
+    });
+
+    init();
+
+  </script>
+</body>
+</html>

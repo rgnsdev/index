@@ -3,7 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Equilibrium RPG</title>
+  <title>Equilibrium RPG - Story-Driven Vertical Auto Battler | Pixel Art RPG</title>
+  <meta name="description" content="Equilibrium RPG is a story-driven vertical auto battler with handcrafted pixel art. Get transported inside the game in this unique single-player adventure. Demo coming soon on itch.io.">
+  <meta name="keywords" content="Equilibrium RPG, auto battler, pixel art game, story-driven RPG, vertical battler, indie game, single player, mobile game, PC game">
+  <meta name="author" content="rgnsdev">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://equilibriumrpg.com/">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Equilibrium RPG - Story-Driven Vertical Auto Battler">
+  <meta property="og:description" content="Get transported inside the game in this unique story-driven vertical auto battler with handcrafted pixel art. Single-player adventure coming soon.">
+  <meta property="og:url" content="https://equilibriumrpg.com/">
+  <meta property="og:site_name" content="Equilibrium RPG">
+  <meta property="og:locale" content="en_US">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Equilibrium RPG - Story-Driven Vertical Auto Battler">
+  <meta name="twitter:description" content="Get transported inside the game in this unique story-driven vertical auto battler with handcrafted pixel art.">
+  
+  <meta name="theme-color" content="#51B1E8">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Equilibrium RPG",
+    "description": "A story-driven vertical auto battler with handcrafted pixel art. Get transported inside the game in this unique single-player adventure.",
+    "genre": ["Auto Battler", "RPG", "Story-Driven"],
+    "gamePlatform": ["PC", "Mobile", "Android", "iOS"],
+    "playMode": "SinglePlayer",
+    "author": {
+      "@type": "Person",
+      "name": "rgnsdev"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "rgnsdev"
+    },
+    "inLanguage": "en",
+    "url": "https://equilibriumrpg.com/",
+    "sameAs": [
+      "https://discord.gg/nDTVEqxSrg",
+      "https://instagram.com/equilibriumrpg",
+      "https://patreon.com/equilibriumrpg"
+    ]
+  }
+  </script>
+  
   <style>
     @font-face {
       font-family: 'RetroGaming';
@@ -22,7 +71,10 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
       background: #1E1E1E;
-      color: #fff;
+      color: #f0f0f0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
     }
     header {
       background: linear-gradient(180deg, rgb(81, 177, 232,1), rgb(144, 238, 245,0));
@@ -233,9 +285,6 @@
           padding-top: 40px;
           padding-bottom: 30px;
       }
-      header::before {
-        height: 150px;
-      }
       header h1 {
         font-size: 2.5em;
       }
@@ -255,6 +304,12 @@
       gap: 15px;
     }
     }
+
+    @media (max-width: 425px) {
+      header::before {
+        height: 150px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -267,24 +322,25 @@
       <h1 data-key="pageTitle">Equilibrium RPG</h1>
       <p data-key="tagline" id="description">Enter a world full of adventures and encounters. Get ready to experience an unique story, <b>Your</b> story.</p>
       <div class="cta-container">
-        <a href="https://discord.gg/nDTVEqxSrg" target="_blank" class="cta-button" data-key="downloadBtn">Join Discord</a>
+        <a href="https://discord.gg/nDTVEqxSrg" target="_blank" rel="noopener noreferrer" class="cta-button" data-key="downloadBtn" aria-label="Join Discord Community">Join Discord</a>
         <div class="social-links-top">
-          <a href="https://instagram.com/equilibriumrpg" target="_blank">Instagram</a>
-          <a href="https://patreon.com/equilibriumrpg" target="_blank">Patreon</a>
+          <a href="https://instagram.com/equilibriumrpg" target="_blank" rel="noopener noreferrer" aria-label="Follow on Instagram">Instagram</a>
+          <a href="https://patreon.com/equilibriumrpg" target="_blank" rel="noopener noreferrer" aria-label="Support on Patreon">Patreon</a>
         </div>
+        <a href="concepts.html" class="cta-button" style="background-color: #2f3640; border: 2px solid #fff; padding: 5px 10px; font-size: 0.8em; margin-top: 10px;">View Concept Arts<br>(spoilers)</a>
       </div>
     </div>
   </header>
 
-  <section id="screenshots">
+  <section id="screenshots" aria-label="Game Screenshots">
     <h2 data-key="screenshotsTitle">Game Screenshots</h2>
     <div class="screenshots">
-      <img src="images/screenshot_1.png" alt="Screenshot 1">
-      <img src="images/screenshot_2.png" alt="Screenshot 2">
-      <img src="images/screenshot_3.png" alt="Screenshot 3">
-      <img src="images/screenshot_4.png" alt="Screenshot 4">
-      <img src="images/screenshot_5.png" alt="Screenshot 5">
-      <img src="images/screenshot_6.png" alt="Screenshot 6">
+      <img src="images/screenshot_1.png" alt="Equilibrium RPG gameplay screenshot" loading="lazy">
+      <img src="images/screenshot_2.png" alt="Equilibrium RPG gameplay screenshot" loading="lazy">
+      <img src="images/screenshot_3.png" alt="Equilibrium RPG gameplay screenshot" loading="lazy">
+      <img src="images/screenshot_4.png" alt="Equilibrium RPG gameplay screenshot" loading="lazy">
+      <img src="images/screenshot_5.png" alt="Equilibrium RPG gameplay screenshot" loading="lazy">
+      <img src="images/screenshot_6.png" alt="Equilibrium RPG gameplay screenshot" loading="lazy">
     </div>
 
     <div class="video-container">
@@ -294,11 +350,11 @@
     </div>
   </section>
 
-  <section id="join">
+  <section id="join" aria-label="Community">
     <h2 data-key="joinSectionTitle">Join Our Community</h2>
     <p data-key="joinSectionText" style="text-align: center;">Join our Discord to connect with other players and stay updated!</p>
     <div style="text-align: center; margin-top: 20px;">
-      <a href="https://discord.gg/nDTVEqxSrg" target="_blank" class="cta-button">Join Discord</a>
+      <a href="https://discord.gg/nDTVEqxSrg" target="_blank" rel="noopener noreferrer" class="cta-button" aria-label="Join Discord Community">Join Discord</a>
     </div>
   </section>
 
@@ -314,9 +370,9 @@
   <footer>
     <p data-key="footerText">© 2025 Equilibrium RPG. All rights reserved. Made by rgnsdev.</p>
     <div class="social-links">
-      <a href="https://discord.gg/nDTVEqxSrg" target="_blank">Discord</a>
-      <a href="https://instagram.com/equilibriumrpg" target="_blank">Instagram</a>
-      <a href="https://patreon.com/equilibriumrpg" target="_blank">Patreon</a>
+      <a href="https://discord.gg/nDTVEqxSrg" target="_blank" rel="noopener noreferrer" aria-label="Discord">Discord</a>
+      <a href="https://instagram.com/equilibriumrpg" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+      <a href="https://patreon.com/equilibriumrpg" target="_blank" rel="noopener noreferrer" aria-label="Patreon">Patreon</a>
     </div>
   </footer>
 
