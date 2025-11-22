@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Concept Art Gallery - Equilibrium RPG | Handcrafted Pixel Art</title>
-  <meta name="description" content="Explore the visual development of Equilibrium RPG. View handcrafted pixel art concepts for environments, creatures, and enemies. All human-made art.">
+  <meta name="description"
+    content="Explore the visual development of Equilibrium RPG. View handcrafted pixel art concepts for environments, creatures, and enemies. All human-made art.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://equilibriumrpg.com/concepts.html">
-  
+
   <meta property="og:type" content="website">
   <meta property="og:title" content="Concept Art Gallery - Equilibrium RPG">
-  <meta property="og:description" content="Explore the visual development of Equilibrium RPG with handcrafted pixel art concepts.">
+  <meta property="og:description"
+    content="Explore the visual development of Equilibrium RPG with handcrafted pixel art concepts.">
   <meta property="og:url" content="https://equilibriumrpg.com/concepts.html">
-  
+
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Concept Art Gallery - Equilibrium RPG">
-  <meta name="twitter:description" content="Explore the visual development of Equilibrium RPG with handcrafted pixel art concepts.">
-  
+  <meta name="twitter:description"
+    content="Explore the visual development of Equilibrium RPG with handcrafted pixel art concepts.">
+
   <meta name="theme-color" content="#51B1E8">
   <link rel="icon" type="image/png" sizes="32x32" href="images/webicons/icon-32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="images/webicons/icon-192.png">
@@ -26,20 +30,23 @@
       font-family: 'RetroGaming';
       src: url('fonts/Retro Gaming.ttf') format('truetype');
     }
+
     @font-face {
       font-family: 'RasterForge';
       src: url('fonts/RasterForgeRegular.ttf') format('truetype');
     }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'RasterForge', 'Segoe UI', sans-serif;
       line-height: 1.6;
       background: #1E1E1E;
-      color: #f0f0f0; 
+      color: #f0f0f0;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -49,24 +56,27 @@
     }
 
     header {
-      background: linear-gradient(180deg, rgb(81, 177, 232,1), rgb(144, 238, 245,0));
+      background: linear-gradient(180deg, rgb(81, 177, 232, 1), rgb(144, 238, 245, 0));
       padding: 40px 20px;
       text-align: center;
       position: relative;
       overflow: hidden;
       flex-shrink: 0;
     }
+
     header::before {
       content: '';
       position: absolute;
       top: 0;
       left: 5%;
       width: 100%;
-      height: 400px; 
+      height: 400px;
       background-image: url('images/clouds.png');
       background-repeat: no-repeat;
       background-size: 100% 100%;
-      image-rendering: pixelated;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: crisp-edges;
       opacity: 0.6;
       z-index: 0;
     }
@@ -82,9 +92,10 @@
       font-size: 2.5em;
       text-shadow: 2px 2px 0 #1A1A1A;
       margin-bottom: 5px;
-      position: relative; 
+      position: relative;
       z-index: 2;
     }
+
     header p {
       font-size: 1.2em;
       margin-bottom: 20px;
@@ -93,6 +104,7 @@
       font-family: 'RasterForge', sans-serif;
       font-weight: 500;
     }
+
     .header-actions {
       position: relative;
       z-index: 2;
@@ -100,6 +112,7 @@
       justify-content: center;
       gap: 15px;
     }
+
     .btn {
       background-color: #2f3640;
       color: #fff;
@@ -115,6 +128,7 @@
       align-items: center;
       gap: 8px;
     }
+
     .btn:hover {
       background-color: #ff4757;
       border-color: #ff4757;
@@ -140,21 +154,21 @@
       justify-content: space-between;
       align-items: baseline;
     }
-    
+
     .section-title .preview-note {
       font-family: 'RetroGaming', sans-serif;
       font-size: 0.6em;
       color: #aaa;
       font-weight: normal;
     }
-    
+
     @media (max-width: 768px) {
       .section-title {
         flex-direction: column;
         align-items: flex-start;
         gap: 5px;
       }
-      
+
       .section-title .preview-note {
         font-size: 0.6em;
       }
@@ -169,7 +183,7 @@
     }
 
     .album-card {
-      width: calc(25% - 19px); 
+      width: calc(25% - 19px);
       background: #2f3640;
       border-radius: 8px;
       overflow: hidden;
@@ -180,63 +194,84 @@
       flex-direction: column;
       position: relative;
     }
-    
-    @media (max-width: 1200px) { .album-card { width: calc(33.33% - 17px); } }
-    @media (max-width: 900px) { .album-card { width: calc(50% - 13px); } }
-    @media (max-width: 600px) { .album-card { width: 100%; } }
+
+    @media (max-width: 1200px) {
+      .album-card {
+        width: calc(33.33% - 17px);
+      }
+    }
+
+    @media (max-width: 900px) {
+      .album-card {
+        width: calc(50% - 13px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .album-card {
+        width: 100%;
+      }
+    }
 
     .album-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
       border-color: #fff;
       z-index: 10;
     }
-    
+
     .album-cover-container {
       width: 100%;
       overflow: hidden;
-      background-color: #2f3640; 
+      background-color: #2f3640;
       border-bottom: 1px solid #444;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 20px; 
+      padding: 20px;
     }
 
     .cover-env {
-      height: 600px; 
+      height: 600px;
     }
+
     .cover-char {
-      height: 250px; 
+      height: 250px;
     }
-    
+
     .album-cover {
       width: 100%;
       height: 100%;
-      object-fit: contain; 
+      object-fit: contain;
       object-position: center;
       display: block;
       transition: transform 0.3s ease;
-      opacity: 0; 
+      opacity: 0;
       animation: fadeIn 0.5s forwards;
     }
-    
+
     @keyframes fadeIn {
-      to { opacity: 1; }
+      to {
+        opacity: 1;
+      }
     }
-    
+
     .album-card:hover .album-cover {
       transform: scale(1.05);
     }
 
     .album-cover {
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
       image-rendering: crisp-edges;
     }
 
     .gallery-item img {
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
       image-rendering: crisp-edges;
     }
-    
+
     .album-info {
       padding: 15px;
       flex-grow: 1;
@@ -245,12 +280,14 @@
       justify-content: center;
       background: #2f3640;
     }
+
     .album-title {
       font-family: 'RasterForge', sans-serif;
       font-size: 1.2em;
       color: #fff;
       margin-bottom: 5px;
     }
+
     .album-count {
       font-size: 0.9em;
       color: #aaa;
@@ -258,9 +295,9 @@
     }
 
     #detail-view {
-      display: none; 
+      display: none;
     }
-    
+
     #detail-desc {
       margin-bottom: 30px;
       color: #aaa;
@@ -281,22 +318,38 @@
       background: #252525;
       border-radius: 6px;
       overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
       transition: transform 0.2s ease;
       display: flex;
       flex-direction: column;
       cursor: pointer;
     }
-    
-    @media (max-width: 1200px) { .gallery-item { width: calc(33.33% - 14px); } }
-    @media (max-width: 800px) { .gallery-item { width: calc(50% - 10px); } }
-    @media (max-width: 500px) { .gallery-item { width: 100%; } }
+
+    @media (max-width: 1200px) {
+      .gallery-item {
+        width: calc(33.33% - 14px);
+      }
+    }
+
+    @media (max-width: 800px) {
+      .gallery-item {
+        width: calc(50% - 10px);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .gallery-item {
+        width: 100%;
+      }
+    }
 
     .gallery-item:hover {
       transform: scale(1.02);
       z-index: 5;
     }
-    .gallery-item img, .gallery-item video {
+
+    .gallery-item img,
+    .gallery-item video {
       width: 100%;
       height: 250px;
       object-fit: contain;
@@ -304,6 +357,7 @@
       display: block;
       flex-grow: 1;
     }
+
     .item-caption {
       padding: 10px;
       font-size: 0.9em;
@@ -322,16 +376,18 @@
       top: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0,0,0,0.95);
+      background-color: rgba(0, 0, 0, 0.95);
       justify-content: center;
       align-items: center;
       padding: 40px;
       opacity: 0;
       transition: opacity 0.3s ease;
     }
+
     .modal.show {
       opacity: 1;
     }
+
     .modal-content-wrapper {
       position: relative;
       width: 90%;
@@ -339,27 +395,33 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow: hidden; 
+      overflow: hidden;
       cursor: grab;
     }
+
     .modal-content-wrapper:active {
       cursor: grabbing;
     }
+
     .modal-content {
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
       border-radius: 4px;
-      box-shadow: 0 0 30px rgba(0,0,0,0.8);
-      cursor: zoom-in; 
-      transition: transform 0.2s ease; 
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+      cursor: zoom-in;
+      transition: transform 0.2s ease;
       transform-origin: center center;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
       image-rendering: crisp-edges;
     }
+
     .modal-content.zoomed {
       cursor: grab;
-      transform: scale(2.5); 
+      transform: scale(2.5);
     }
+
     .close-modal {
       position: absolute;
       top: 20px;
@@ -371,10 +433,11 @@
       line-height: 1;
       z-index: 2002;
     }
+
     .close-modal:hover {
       color: #ff4757;
     }
-    
+
     .nav-arrow {
       position: absolute;
       top: 50%;
@@ -389,11 +452,18 @@
       transition: color 0.3s;
       font-family: 'RetroGaming', sans-serif;
     }
+
     .nav-arrow:hover {
       color: #ff4757;
     }
-    .prev-arrow { left: 20px; }
-    .next-arrow { right: 20px; }
+
+    .prev-arrow {
+      left: 20px;
+    }
+
+    .next-arrow {
+      right: 20px;
+    }
 
     footer {
       background: #2f3640;
@@ -409,6 +479,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -416,7 +487,8 @@
     <p>Explore the visual development of Equilibrium RPG</p>
     <div class="header-actions">
       <a href="index.html" class="btn" aria-label="Return to home page">← Home</a>
-      <button id="back-btn" class="btn" style="display: none;" onclick="showAlbums()" aria-label="Return to albums view">← Back to Albums</button>
+      <button id="back-btn" class="btn" style="display: none;" onclick="showAlbums()"
+        aria-label="Return to albums view">← Back to Albums</button>
     </div>
   </header>
 
@@ -427,7 +499,7 @@
         <span class="preview-note">Smooth preview; click for pixel art</span>
       </h2>
       <div id="env-albums" class="albums-grid" role="list" aria-label="Environment concept art albums"></div>
-      
+
       <h2 class="section-title">
         Creatures & Enemies
         <span class="preview-note">Smooth preview; click for pixel art</span>
@@ -444,9 +516,9 @@
 
   <div id="imageModal" class="modal">
     <span class="close-modal">&times;</span>
-    
+
     <div class="nav-arrow prev-arrow" onclick="changeImage(-1)">&#8249;</div>
-    
+
     <div class="modal-content-wrapper">
       <img class="modal-content" id="modalImg">
       <video class="modal-content" id="modalVideo" controls style="display:none;"></video>
@@ -553,8 +625,8 @@
         cover: 'leafie_final_cover.png',
         coverPadding: 50,
         items: [
-           ...generateSequence('leafie_concept_', 1, 7, 'webp'),
-           { type: 'img', src: 'leafie_final.png', caption: 'Last Concept Version' }
+          ...generateSequence('leafie_concept_', 1, 7, 'webp'),
+          { type: 'img', src: 'leafie_final.png', caption: 'Last Concept Version' }
         ]
       },
       {
@@ -598,10 +670,10 @@
     function generateSequence(prefix, start, end, ext) {
       const arr = [];
       for (let i = start; i <= end; i++) {
-        arr.push({ 
-          type: 'img', 
-          src: `${prefix}${i}.${ext}`, 
-          caption: `Concept #${i}` 
+        arr.push({
+          type: 'img',
+          src: `${prefix}${i}.${ext}`,
+          caption: `Concept #${i}`
         });
       }
       return arr;
@@ -617,18 +689,18 @@
     function renderAlbums() {
       const envContainer = document.getElementById('env-albums');
       const charContainer = document.getElementById('char-albums');
-      
+
       albums.forEach((album, idx) => {
         const card = document.createElement('div');
         card.className = 'album-card';
         card.onclick = () => openAlbum(idx);
-        
+
         const coverSrc = album.basePath + album.cover;
-        
+
         let heightClass = album.category === 'env' ? 'cover-env' : 'cover-char';
-        
+
         const paddingStyle = album.coverPadding ? `padding: ${album.coverPadding}px;` : '';
-        
+
         card.innerHTML = `
           <div class="album-cover-container ${heightClass}">
             <img class="album-cover" src="${coverSrc}" alt="${album.title}" style="${paddingStyle}"
@@ -647,11 +719,11 @@
         }
       });
     }
-    
+
     function openAlbum(albumIdx) {
       const album = albums[albumIdx];
       currentAlbumIndex = albumIdx;
-      
+
       document.getElementById('albums-view').style.display = 'none';
       document.getElementById('detail-view').style.display = 'block';
       document.getElementById('back-btn').style.display = 'inline-flex';
@@ -659,9 +731,9 @@
 
       document.getElementById('detail-title').textContent = album.title;
       document.getElementById('detail-desc').textContent = `Collection of ${album.items.length} concepts and final assets for ${album.title}.`;
-      
+
       const grid = document.getElementById('detail-grid');
-      grid.innerHTML = ''; 
+      grid.innerHTML = '';
 
       album.items.forEach((item, index) => {
         const div = document.createElement('div');
@@ -679,7 +751,7 @@
             <div class="item-caption">${item.caption}</div>
           `;
         }
-        
+
         div.onclick = () => openModal(albumIdx, index);
         grid.appendChild(div);
       });
@@ -687,7 +759,7 @@
 
     function showAlbums() {
       document.getElementById('detail-view').style.display = 'none';
-      document.getElementById('albums-view').style.display = 'block'; 
+      document.getElementById('albums-view').style.display = 'block';
       document.getElementById('back-btn').style.display = 'none';
     }
 
@@ -700,7 +772,7 @@
       currentAlbumIndex = albIdx;
       currentImageIndex = imgIdx;
       updateModalContent();
-      
+
       modal.style.display = "flex";
       setTimeout(() => modal.classList.add('show'), 10);
     }
@@ -724,18 +796,18 @@
         modalImg.src = fullPath;
       }
     }
-    
+
     let isZoomed = false;
     let startX, startY, translateX = 0, translateY = 0;
-    let isDragging = false; 
-    let hasMoved = false;   
-    
+    let isDragging = false;
+    let hasMoved = false;
+
     function resetZoom() {
       isZoomed = false;
       translateX = 0;
       translateY = 0;
       modalImg.classList.remove('zoomed');
-      modalImg.style.transform = ''; 
+      modalImg.style.transform = '';
       modalImg.style.cursor = 'zoom-in';
       wrapper.style.cursor = 'default';
     }
@@ -744,48 +816,48 @@
 
     modalImg.ondragstart = () => false;
 
-    wrapper.addEventListener('mousedown', function(e) {
+    wrapper.addEventListener('mousedown', function (e) {
       if (!isZoomed) return;
-      
+
       isDragging = true;
       hasMoved = false;
       startX = e.clientX - translateX;
       startY = e.clientY - translateY;
-      
+
       wrapper.style.cursor = 'grabbing';
       modalImg.style.cursor = 'grabbing';
     });
 
-    window.addEventListener('mousemove', function(e) {
+    window.addEventListener('mousemove', function (e) {
       if (!isDragging || !isZoomed) return;
 
-      e.preventDefault(); 
+      e.preventDefault();
       hasMoved = true;
-      
+
       translateX = e.clientX - startX;
       translateY = e.clientY - startY;
-      
+
       modalImg.style.transform = `scale(2.5) translate(${translateX / 2.5}px, ${translateY / 2.5}px)`;
     });
 
-    window.addEventListener('mouseup', function(e) {
+    window.addEventListener('mouseup', function (e) {
       if (!isDragging) return;
-      
+
       isDragging = false;
       wrapper.style.cursor = 'default';
       modalImg.style.cursor = 'grab';
     });
 
-    modalImg.addEventListener('click', function(e) {
+    modalImg.addEventListener('click', function (e) {
       e.stopPropagation();
-      
+
       if (hasMoved && isZoomed) {
         hasMoved = false;
         return;
       }
-      
+
       isZoomed = !isZoomed;
-      
+
       if (isZoomed) {
         modalImg.classList.add('zoomed');
         modalImg.style.cursor = 'grab';
@@ -801,20 +873,20 @@
       if (newImgIdx >= 0 && newImgIdx < album.items.length) {
         currentImageIndex = newImgIdx;
         updateModalContent();
-      } 
+      }
       else if (newImgIdx >= album.items.length) {
         const nextAlbIdx = currentAlbumIndex + 1;
         if (nextAlbIdx < albums.length) {
           currentAlbumIndex = nextAlbIdx;
-          currentImageIndex = 0; 
+          currentImageIndex = 0;
           updateModalContent();
         }
-      } 
+      }
       else if (newImgIdx < 0) {
         const prevAlbIdx = currentAlbumIndex - 1;
         if (prevAlbIdx >= 0) {
           currentAlbumIndex = prevAlbIdx;
-          currentImageIndex = albums[prevAlbIdx].items.length - 1; 
+          currentImageIndex = albums[prevAlbIdx].items.length - 1;
           updateModalContent();
         }
       }
@@ -827,18 +899,18 @@
         modalVideo.pause();
         modalVideo.src = "";
         modalImg.src = "";
-      }, 300); 
+      }, 300);
     }
 
     closeBtn.onclick = closeModalFunc;
-    
-    modal.onclick = function(e) {
+
+    modal.onclick = function (e) {
       if (e.target === modal || e.target.classList.contains('modal-content-wrapper')) {
         closeModalFunc();
       }
     }
-    
-    document.addEventListener('keydown', function(e) {
+
+    document.addEventListener('keydown', function (e) {
       if (modal.style.display === "flex") {
         if (e.key === "Escape") closeModalFunc();
         if (e.key === "ArrowLeft") changeImage(-1);
@@ -850,4 +922,5 @@
 
   </script>
 </body>
+
 </html>
