@@ -228,7 +228,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 20px;
     }
 
     .cover-env {
@@ -236,12 +235,23 @@
     }
 
     .cover-char {
-      height: 250px;
+      height: auto;
+      min-height: 400px;
+    }
+
+    .cover-char .album-cover {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      margin: auto;
+      image-rendering: pixelated;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: crisp-edges;
     }
 
     .album-cover {
       width: 100%;
-      height: 100%;
+      height: auto;
       object-fit: contain;
       object-position: center;
       display: block;
@@ -699,11 +709,9 @@
 
         let heightClass = album.category === 'env' ? 'cover-env' : 'cover-char';
 
-        const paddingStyle = album.coverPadding ? `padding: ${album.coverPadding}px;` : '';
-
         card.innerHTML = `
           <div class="album-cover-container ${heightClass}">
-            <img class="album-cover" src="${coverSrc}" alt="${album.title}" style="${paddingStyle}"
+            <img class="album-cover" src="${coverSrc}" alt="${album.title}"
                  onerror="this.src='https://via.placeholder.com/300x200/333/fff?text=No+Cover'">
           </div>
           <div class="album-info">
