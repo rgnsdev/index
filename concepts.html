@@ -230,13 +230,11 @@
     }
 
     .album-cover {
-      image-rendering: auto;
-      -ms-interpolation-mode: bicubic;
+      image-rendering: crisp-edges;
     }
 
     .gallery-item img {
-      image-rendering: auto;
-      -ms-interpolation-mode: bicubic;
+      image-rendering: crisp-edges;
     }
     
     .album-info {
@@ -356,11 +354,7 @@
       cursor: zoom-in; 
       transition: transform 0.2s ease; 
       transform-origin: center center;
-      image-rendering: -moz-crisp-edges;
-      image-rendering: -webkit-crisp-edges;
-      image-rendering: pixelated;
       image-rendering: crisp-edges;
-      -ms-interpolation-mode: nearest-neighbor;
     }
     .modal-content.zoomed {
       cursor: grab;
