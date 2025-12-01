@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credits - Equilibrium RPG</title>
+    <meta name="description"
+        content="Credits for Equilibrium RPG. Acknowledging the artists, musicians, and creators who contributed to the game.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://equilibriumrpg.com/credits.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Credits - Equilibrium RPG">
+    <meta property="og:description" content="Credits for Equilibrium RPG.">
+    <meta property="og:url" content="https://equilibriumrpg.com/credits.html">
+    <meta property="og:site_name" content="Equilibrium RPG">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="theme-color" content="#51B1E8">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/webicons/icon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/webicons/icon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/webicons/icon-180.png">
+
+    <style>
+        @font-face {
+            font-family: 'RetroGaming';
+            src: url('fonts/Retro Gaming.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'RasterForge';
+            src: url('fonts/RasterForgeRegular.ttf') format('truetype');
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: none;
+            -moz-osx-font-smoothing: unset;
+            text-rendering: geometricPrecision;
+            font-smooth: never;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: #1E1E1E;
+            color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 5%;
+            width: 100%;
+            height: 500px;
+            background-image: url('images/clouds.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: pixelated;
+            opacity: 0.8;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        header {
+            background: linear-gradient(180deg, rgb(81, 177, 232, 1), rgb(144, 238, 245, 0));
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            min-height: 300px;
+        }
+
+        .header-container {
+            font-family: 'RasterForge', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        header h1 {
+            font-family: 'RetroGaming', sans-serif;
+            font-size: 3em;
+            text-shadow:
+                2px 2px 0 #1A1A1A,
+                2px 2px 0 #1A1A1A,
+                2px 2px 0 #1A1A1A,
+                2px 2px 0 #1A1A1A;
+            margin-bottom: 10px;
+        }
+
+        header .credits-subtitle {
+            font-family: 'RasterForge', sans-serif;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .cta-button {
+            background-color: #ff4757;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .cta-button:hover {
+            background-color: #e84118;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+            flex: 1;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .credits-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background: rgba(47, 54, 64, 0.5);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+        }
+
+        .credit-category {
+            font-family: 'RetroGaming', sans-serif;
+            color: #51B1E8;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.7em;
+            text-align: center;
+            text-transform: uppercase;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .credit-category:first-child {
+            margin-top: 0;
+        }
+
+        .credit-subcategory {
+            font-family: 'RasterForge', sans-serif;
+            color: #cccccc;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.15em;
+            text-align: center;
+        }
+
+        .credit-item {
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 1.1em;
+            color: #dcdde1;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .credit-item a {
+            color: #51B1E8;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-bottom: 1px dotted #51B1E8;
+            word-break: break-all;
+            overflow-wrap: break-word;
+            display: inline-block;
+            max-width: 100%;
+        }
+
+        .credit-item a:hover {
+            color: #7fb3d3;
+            border-bottom: 1px solid #7fb3d3;
+        }
+
+        footer {
+            background: #2f3640;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            margin-top: auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .social-links {
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ff4757;
+        }
+
+        @media (max-width: 768px) {
+            body::before {
+                height: 300px;
+            }
+
+            header {
+                padding-top: 40px;
+                padding-bottom: 30px;
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header .credits-subtitle {
+                font-size: 1.5em;
+            }
+
+            .credits-container {
+                padding: 20px;
+            }
+
+            section {
+                padding-top: 15px;
+            }
+
+            .credit-item {
+                font-size: 1em;
+            }
+
+            .credit-item a {
+                word-break: break-all;
+                overflow-wrap: anywhere;
+            }
+        }
+
+        @media (max-width: 425px) {
+
+            body::before {
+                height: 150px;
+            }
+
+            header .credits-subtitle {
+                font-size: 1.5em;
+            }
+
+            .credits-container {
+                padding: 15px;
+            }
+
+            section {
+                padding-top: 15px;
+            }
+
+            .credit-item {
+                font-size: 0.95em;
+            }
+
+            .credit-item a {
+                word-break: break-all;
+                overflow-wrap: anywhere;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Equilibrium RPG</h1>
+            <p class="credits-subtitle">Credits</p>
+            <a href="index.html" class="cta-button">Back to Home</a>
+        </div>
+    </header>
+
+    <section>
+        <div id="credits-content" class="credits-container">
+            <p style="text-align: center;">Loading credits...</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Equilibrium RPG. All rights reserved. Made by rgnsdev.</p>
+        <div class="social-links">
+            <a href="https://discord.gg/nDTVEqxSrg" target="_blank" rel="noopener noreferrer"
+                aria-label="Discord">Discord</a>
+            <a href="https://instagram.com/equilibriumrpg" target="_blank" rel="noopener noreferrer"
+                aria-label="Instagram">Instagram</a>
+            <a href="https://patreon.com/equilibriumrpg" target="_blank" rel="noopener noreferrer"
+                aria-label="Patreon">Patreon</a>
+        </div>
+    </footer>
+
+    <script src="credits_data.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const processCredits = (text) => {
+                const container = document.getElementById('credits-content');
+                container.innerHTML = '';
+
+                const lines = text.split('\n');
+                let isCustomSection = false;
+                let isCustomMusic = false;
+
+                lines.forEach(line => {
+                    line = line.trim();
+                    if (!line) return;
+
+                    if (line.endsWith(':')) {
+                        const title = line.slice(0, -1);
+                        const isMainCategory = title === title.toUpperCase();
+
+                        if (isMainCategory) {
+                            const h2 = document.createElement('h2');
+                            h2.className = 'credit-category';
+                            h2.textContent = title;
+                            container.appendChild(h2);
+                            isCustomSection = (title === 'CUSTOM ART');
+                            isCustomMusic = false;
+                        } else {
+                            const h3 = document.createElement('h3');
+                            h3.className = 'credit-subcategory';
+                            h3.textContent = title;
+                            container.appendChild(h3);
+                            isCustomMusic = (title === 'Custom Music');
+                        }
+                    } else {
+                        const p = document.createElement('p');
+                        p.className = 'credit-item';
+
+                        const urlRegex = /(https?:\/\/[^\s]+)/g;
+                        const parts = line.split(urlRegex);
+                        let isCustomCreator = isCustomSection || isCustomMusic;
+
+                        parts.forEach(part => {
+                            if (part.match(urlRegex)) {
+                                const a = document.createElement('a');
+                                a.href = part;
+                                a.target = "_blank";
+                                a.rel = "noopener noreferrer";
+                                a.textContent = part;
+                                p.appendChild(a);
+                            } else {
+                                if (isCustomCreator) {
+                                    if (part.includes(':')) {
+                                        const colonIndex = part.indexOf(':');
+                                        const beforeColon = part.substring(0, colonIndex + 1);
+                                        const afterColon = part.substring(colonIndex + 1).trim();
+                                        
+                                        p.appendChild(document.createTextNode(beforeColon + ' '));
+                                        
+                                        if (afterColon) {
+                                            const parenIndex = afterColon.indexOf('(');
+                                            if (parenIndex > 0) {
+                                                const name = afterColon.substring(0, parenIndex).trim();
+                                                const alias = afterColon.substring(parenIndex);
+                                                const boldName = document.createElement('strong');
+                                                boldName.textContent = name;
+                                                p.appendChild(boldName);
+                                                p.appendChild(document.createTextNode(' ' + alias));
+                                            } else {
+                                                const boldName = document.createElement('strong');
+                                                boldName.textContent = afterColon;
+                                                p.appendChild(boldName);
+                                            }
+                                        }
+                                    } else {
+                                        const parenIndex = part.indexOf('(');
+                                        if (parenIndex > 0) {
+                                            const name = part.substring(0, parenIndex).trim();
+                                            const alias = part.substring(parenIndex);
+                                            const boldName = document.createElement('strong');
+                                            boldName.textContent = name;
+                                            p.appendChild(boldName);
+                                            p.appendChild(document.createTextNode(' ' + alias));
+                                        } else {
+                                            const boldName = document.createElement('strong');
+                                            boldName.textContent = part;
+                                            p.appendChild(boldName);
+                                        }
+                                    }
+                                } else {
+                                    p.appendChild(document.createTextNode(part));
+                                }
+                            }
+                        });
+
+                        container.appendChild(p);
+                    }
+                });
+            };
+
+            if (typeof creditsData !== 'undefined') {
+                processCredits(creditsData);
+            } else {
+                console.error('creditsData is undefined');
+                const container = document.getElementById('credits-content');
+                container.innerHTML = `
+                <div style="text-align: center;">
+                    <p style="color: #ff4757; font-size: 1.2em; margin-bottom: 10px;">Unable to load credits.</p>
+                    <p>Please check if credits_data.js exists and is valid.</p>
+                </div>
+            `;
+            }
+        });
+    </script>
+</body>
+
+</html>

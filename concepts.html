@@ -40,6 +40,10 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      -webkit-font-smoothing: none;
+      -moz-osx-font-smoothing: unset;
+      text-rendering: geometricPrecision;
+      font-smooth: never;
     }
 
     body {
@@ -50,9 +54,6 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      text-rendering: optimizeLegibility;
     }
 
     header {
@@ -539,7 +540,8 @@
   </div>
 
   <footer>
-    <p>© 2025 Equilibrium RPG. All rights reserved. Made by rgnsdev.</p>
+    <p>© 2025 Equilibrium RPG. All rights reserved. Made by rgnsdev. | <a href="credits.html"
+        style="color: #fff; text-decoration: none;">Credits</a></p>
   </footer>
 
   <script>
