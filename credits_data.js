@@ -14,7 +14,7 @@ Raster Forge: GGBotNet - https://www.ggbot.net/
 Retro Gaming: Daymarius - https://www.dafont.com/profile.php?user=1002696
 
 Character Sprites:
-Fairy, Luce, Rosanne, Julie: BKX1 - https://bkx1.itch.io/super-combat-rpg-43
+BKX1 - https://bkx1.itch.io/super-combat-rpg-43
 
 Attack VFX:
 Viktor - https://v-ktor.itch.io/
@@ -25,7 +25,7 @@ Dusk Games - https://dusk-games.itch.io/
 AUDIO:
 
 Custom Music:
-Suikale
+Eero Herala (Suikale)
 
 Pre-made Music:
 Boss Fight Music: kbrecordzz - https://freesound.org/people/kbrecordzz/
