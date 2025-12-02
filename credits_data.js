@@ -40,6 +40,7 @@ Coin Found Sound: Mateusz_Chenc - https://freesound.org/people/Mateusz_Chenc/
 Item Drop Sound: IENBA - https://freesound.org/people/IENBA/
 Game Start Sound: plasterbrain - https://freesound.org/people/plasterbrain/
 Button Click Sound: Leszek Szary - https://freesound.org/people/Leszek_Szary/
+Enemy Stats Click Sound: Nightflame - https://freesound.org/people/Nightflame/
 
 Sound Effects - Ambient & Other:
 Speech Sound: 666HeroHero - https://herohero.carrd.co/
