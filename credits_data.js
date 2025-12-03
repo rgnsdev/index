@@ -7,6 +7,9 @@ Romer Charles Benabaye (Charles)
 Backgrounds and Monster Platform:
 Baran B. Özden (Alenthas)
 
+Pixel Art Cleanup:
+Ahmaad Alshawa (Kinoko)
+
 PRE-MADE VISUAL ASSETS:
 
 Fonts:
