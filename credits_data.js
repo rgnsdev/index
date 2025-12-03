@@ -22,6 +22,9 @@ Viktor - https://v-ktor.itch.io/
 Gold and Item Category Icons:
 Dusk Games - https://dusk-games.itch.io/
 
+Social Button Icons:
+kayillustrations - https://itch.io/profile/kayillustrations
+
 AUDIO:
 
 Custom Music:
