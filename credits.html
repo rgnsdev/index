@@ -350,13 +350,13 @@
                             h2.textContent = title;
                             container.appendChild(h2);
                             isCustomSection = (title === 'CUSTOM ART');
-                            isCustomMusic = false;
+                            isCustomMusic = (title === 'CUSTOM MUSIC');
                         } else {
                             const h3 = document.createElement('h3');
                             h3.className = 'credit-subcategory';
                             h3.textContent = title;
                             container.appendChild(h3);
-                            isCustomMusic = (title === 'Custom Music');
+                            isCustomMusic = false;
                         }
                     } else {
                         const p = document.createElement('p');

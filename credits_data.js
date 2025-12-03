@@ -28,10 +28,12 @@ Dusk Games - https://dusk-games.itch.io/
 Social Button Icons:
 kayillustrations - https://itch.io/profile/kayillustrations
 
-AUDIO:
+CUSTOM MUSIC:
 
-Custom Music:
+Stage Soundtracks:
 Eero Herala (Suikale)
+
+PRE-MADE AUDIO:
 
 Pre-made Music:
 Boss Fight Music: kbrecordzz - https://freesound.org/people/kbrecordzz/
