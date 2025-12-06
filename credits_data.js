@@ -22,6 +22,9 @@ BKX1 - https://bkx1.itch.io/super-combat-rpg-43
 Attack VFX:
 Viktor - https://v-ktor.itch.io/
 
+Inspection Sprite:
+Freepik - https://www.freepik.com/free-vector/yellow-alchemy-symbols-badges_850764.htm
+
 Gold and Item Category Icons:
 Dusk Games - https://dusk-games.itch.io/
 
